@@ -12,7 +12,24 @@ body {
   color: var(--main-text-color);
   letter-spacing: 0.03em;
 }
-3 .list {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.list {
   list-style: none;
 }
 
@@ -20,22 +37,56 @@ body {
   text-decoration: none;
   color: var(--main-title-color);
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--main-title-color);
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
 .nav-logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
+  margin-right: 93px;
 }
 .logoweb {
   color: var(--accent-color);
 }
 .nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-size: 14px;
   line-height: 1.16;
   font-weight: 500;
@@ -43,13 +94,20 @@ body {
 }
 
 .cont-mail {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
   color: var(--main-text-color);
   letter-spacing: 0.03em;
+  margin-right: 50px;
 }
 .cont-tel {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
@@ -68,6 +126,8 @@ body {
 
 .hero {
   background-color: #2f303a;
+  height: 600px;
+  padding-top: 200px;
 }
 .hero-title {
   text-align: center;
@@ -85,47 +145,108 @@ body {
   color: var(--h1-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+.pluses {
+  display: flex;
+  height: 101px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
+.pluses-list {
+  display: flex;
+}
+.pluses-item {
+  width: 270px;
+}
+.pluses-item:not(:last-child) {
+  margin-right: 30px;
+}
 .pluses-title {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 .pluses-text {
   font-size: 14px;
   line-height: 1.71;
 }
+.cases-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.cases-list {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.cases-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team {
   background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-title {
+  padding-top: 94px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-img {
+  margin-bottom: 30px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .teammate {
   font-size: 16px;
   line-height: 1.17;
   font-weight: 500;
   color: var(--main-title-color);
+  text-align: center;
 }
 .position {
   font-size: 16px;
   line-height: 1.17;
   color: var(--main-text-color);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .contact-link {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
+
 .foot-logo {
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .foot-link {
   font-size: 14px;
@@ -133,20 +254,50 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
-
+.filters {
+  display: flex;
+  justify-content: center;
+}
+.filter-item {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.case {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
 .case-name {
   font-size: 18px;
   line-height: 2;
   color: var(--main-title-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .case-text {
   font-size: 14px;
   line-height: 1.88;
 }
+.case-item {
+  cursor: pointer;
+}
+.case-item:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
+}
+.case-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
 .pointer {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.63;
   color: var(--main-title-color);
   background-color: #f5f4fa;
+  border-radius: 4px;
+  border: transparent;
+  padding: 6px 22px 6px 22px;
 }
