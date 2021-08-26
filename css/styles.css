@@ -54,8 +54,7 @@ ul {
   align-items: center;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header-list {
   display: flex;
@@ -154,9 +153,8 @@ ul {
 }
 .pluses {
   display: flex;
-  height: 101px;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .pluses-list {
@@ -186,7 +184,9 @@ ul {
 }
 .cases-list {
   display: flex;
-  margin-bottom: 90px;
+}
+.cases {
+  padding-bottom: 90px;
 }
 
 .cases-item:not(:last-child) {
@@ -195,12 +195,13 @@ ul {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
 }
 .team-title {
-  padding-top: 94px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -236,6 +237,9 @@ ul {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+  margin-bottom: 9px;
+}
+.addres-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -300,6 +304,7 @@ ul {
 .pointer {
   cursor: pointer;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
   color: var(--main-title-color);
   background-color: #f5f4fa;
