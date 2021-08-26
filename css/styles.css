@@ -258,13 +258,16 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
+.filt-sect {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .filters {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-item {
-  padding-top: 94px;
-  margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -272,7 +275,6 @@ ul {
 .case {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 .case-name {
   font-size: 18px;
